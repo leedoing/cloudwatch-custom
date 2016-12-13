@@ -1,8 +1,8 @@
 #!/bin/bash
+export AWS_CONFIG_FILE="/root/.aws/config"
 
 #Get EC2-id
 instanceid=`wget -q -O - http://169.254.169.254/latest/meta-data/instance-id`
-
 
 #Get Memory Used
 mem_total=$(free -m |grep Mem |awk '{print $2}')
