@@ -6,7 +6,7 @@ Use CloudWatch Custom Metric(Disk, Memory Used)
 ##EC2 Instance User data
 ```{r, engine='bash', count_lines}
 #!/bin/bash
-aws configure set default ap-northeast-2
+aws configure set default.region ap-northeast-2
 yum -y install git
 git clone https://github.com/leedoing/cloudwatch-custom
 chmod +x /root/cloudwatchCustom.sh
