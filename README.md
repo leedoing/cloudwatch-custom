@@ -13,3 +13,4 @@ chmod +x /cloudwatch-custom/cloudwatchCustom.sh
 echo '*/5 * * * * root /cloudwatch-custom/cloudwatchCustom.sh >> /root/crontab.log' >> /etc/crontab
 /etc/init.d/crond start
 ```
+https://aws.amazon.com/cli/?nc1=h_ls
