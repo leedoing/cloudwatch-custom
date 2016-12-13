@@ -3,7 +3,7 @@ Use CloudWatch Custom Metric(Disk, Memory Used)
 
 ##Make Policy(cloudwatch full access), Role
 
-##EC2 Instance User data
+##EC2 Instance User data(Amazon Linux or installed awscli on linux)
 ```{r, engine='bash', count_lines}
 #!/bin/bash
 aws configure set default.region ap-northeast-2
