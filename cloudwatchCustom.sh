@@ -8,9 +8,6 @@ instanceid=`wget -q -O - http://169.254.169.254/latest/meta-data/instance-id`
 mem_total=$(free -m |grep Mem |awk '{print $2}')
 mem_used=$(free -m |grep Mem |awk '{print $3}')
 mem_free=$(free -m |grep Mem |awk '{print $4}')
-echo $mem_used
-echo $mem_free
-echo $instanceid
 /usr/bin/aws cloudwatch put-metric-data --metric-name MemTotal --namespace $instanceid --value $mem_total --unit Megabytes
 /usr/bin/aws cloudwatch put-metric-data --metric-name MemUsed --namespace $instanceid --value $mem_used --unit Megabytes
 /usr/bin/aws cloudwatch put-metric-data --metric-name MemFree --namespace $instanceid --value $mem_free --unit Megabytes
