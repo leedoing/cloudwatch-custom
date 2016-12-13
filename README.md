@@ -9,7 +9,7 @@ Use CloudWatch Custom Metric(Disk, Memory Used)
 aws configure set default.region ap-northeast-2
 yum -y install git
 git clone https://github.com/leedoing/cloudwatch-custom
-chmod +x /root/cloudwatchCustom.sh
+chmod +x /cloudwatch-custom/cloudwatchCustom.sh
 echo '*/5 * * * * root /cloudwatch-custom/cloudwatchCustom.sh >> /root/crontab.log' >> /etc/crontab
 /etc/init.d/crond start
 ```
