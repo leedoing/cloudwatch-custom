@@ -7,6 +7,7 @@ Use CloudWatch Custom Metric(Disk, Memory Used)
 ```{r, engine='bash', count_lines}
 #!/bin/bash
 yum -y update
+yum -y install curl
 aws configure set default.region ap-northeast-2
 aws configure set default.output json
 yum -y install git
