@@ -1,6 +1,6 @@
 #!/bin/bash
 export AWS_CONFIG_FILE="/root/.aws/config"
-#Get EC2 ID
+#Get EC2-ID
 instanceid=$(curl http://169.254.169.254/latest/meta-data/instance-id)
  
 #Get Memory Used
