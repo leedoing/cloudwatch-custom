@@ -21,7 +21,7 @@ service crond restart
 https://aws.amazon.com/cli/?nc1=h_ls
 
 
-##addition CloudFront Monitoring
+##Addition CloudFront Monitoring
 ```{r,engine='bash', count_lines}
 #!/bin/bash
  
