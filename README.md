@@ -9,6 +9,8 @@ Use CloudWatch Custom Metric(Disk, Memory Used)
 yum -y update
 yum -y install curl
 yum -y install git
+pip install --upgrade pip
+pip install awscli
 aws configure set default.region ap-northeast-2
 aws configure set default.output json
 git clone https://github.com/leedoing/cloudwatch-custom
