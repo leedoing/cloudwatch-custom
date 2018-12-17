@@ -22,6 +22,7 @@ https://aws.amazon.com/cli/?nc1=h_ls
 
 
 ##addition CloudFront Monitoring
+```{r,engine='bash', count_lines}
 #!/bin/bash
  
 ##CF ISSUE CHECK
@@ -100,6 +101,4 @@ echo >&3
  
 #Send mail
 mutt -s "CloudFront Issue Check_$host_name" $MAIL < $path
-
-
-출처: http://blog.leedoing.com/114 [이두잉의 AWS 세상]
+```
